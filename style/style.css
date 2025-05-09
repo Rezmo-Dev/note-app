@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "Parkinsans";
+    src: url(../font/Parkinsans/Parkinsans-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url(../font/Caveat/Caveat-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+    --primary-clr: #424242;
+    --paper-clr: #FFF3E0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--paper-clr);
+    font-family: "Parkinsans";
+}
+
+.work_space__wrapper {
+    flex-basis: 1200px;
+    min-height: 100vh;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #fffdfa;
+}
+
+.input_wrapper {
+    width: 420px;
+    padding: 1rem;
+    z-index: 1;
+    top: -420px;
+    transition: all 300ms ease-out;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #BDBDBD;
+    background-color: #ffffff;
+    position: absolute;
+    visibility: hidden;
+}
+
+.input_image_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    background-color: #EEEEEE;
+}
+
+.input_wrapper_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px -1px #BDBDBD;
+}
+
+.input_wrapper_image:hover {
+    cursor: pointer;
+}
+
+.select_img {
+    outline: 2px solid #64B5F6;
+    border: 3px solid transparent;
+}
+
+.input_wrapper_image__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+label {
+    color: dimgray;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem;
+    font-family: "Parkinsans";
+    font-size: 14px;
+    border-radius: .3rem;
+    transition: all 600ms ease;
+    border: 2px solid #BDBDBD;
+    margin-bottom: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    transform: translate(-2px);
+    box-shadow: 2px 2px 0 #BDBDBD;
+}
+
+textarea {
+    height: 8rem;
+    resize: none;
+}
+
+.color_bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    gap: .5rem;
+    border-radius: .5rem;
+    background-color: #EEEEEE;
+}
+
+.color_option {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px -1px #BDBDBD;
+}
+
+.color_option:hover {
+    cursor: pointer;
+    transition: all 300ms ease;
+    transform: translateY(-7px);
+}
+
+.color_option1 {
+    background-color: #ff8194;
+}
+
+.select_color {
+    outline: 2px solid #64B5F6;
+}
+
+.color_option2 {
+    background-color: #ffe17d;
+}
+
+.color_option3 {
+    background-color: #4DB6AC;
+}
+
+.color_option4 {
+    background-color: #7fc1ed;
+}
+
+.color_option5 {
+    background-color: #ac7df2;
+}
+
+.color_option6 {
+    background-color: #7cd4f2;
+}
+
+.color_option7 {
+    background-color: #FF8A65;
+}
+
+.color_option8 {
+    background-color: #fff584;
+}
+
+.color_option9 {
+    background-color: #c6fa8a;
+}
+
+.input_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.close_btn {
+    margin: 0 !important;
+}
+
+.add-note {
+    background-color: transparent;
+    color: #64B5F6;
+    border: 2px solid #64B5F6 !important;
+}
+
+.web_title {
+    color: var(--primary-clr);
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web_title::after {
+    content: '';
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(10deg);
+    background-color: #eeeeee6d;
+    border-top: 2px solid #eeeeee97;
+    border-bottom: 2px solid #eeeeee97;
+}
+
+.note_bar {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.note {
+    display: flex;
+    width: 20rem;
+    height: 25rem;
+    border-radius: .5rem;
+    position: relative;
+    flex-direction: column;
+    transform: rotate(-4deg);
+    padding: 2rem 1rem 1rem 1rem;
+    box-shadow: 0 0 1rem -4px #a7a7a7;
+    background-color: #FBE9E7;
+}
+
+.sticky_spot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: 140px;
+    border-radius: 100%;
+    background-color: #ffc4be;
+}
+
+.note_title {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.note_title__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 .7rem #9a9a9a;
+}
+
+.details {
+    width: 100%;
+    height: 15rem;
+    font-size: 22px;
+    font-weight: 500;
+    text-indent: 1rem;
+    color: var(--primary-clr);
+    font-family: "Caveat";
+}
+
+.note_btns {
+    width: 100%;
+    margin-top: .5rem;
+    text-align: end;
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    transition: all 300ms ease;
+    background-color: transparent;
+    font-family: "Parkinsans";
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translate(-2px);
+}
+
+.add-note {
+    color: #64B5F6;
+    border: 2px solid #64B5F6;
+}
+
+
+.add-note:hover {
+    cursor: pointer;
+    transform: translate(-2px);
+    box-shadow: 2px 2px 0 #64B5F6;
+}
+
+.remove_btn,
+.close_btn {
+    color: #F44336;
+    border: 2px solid #F44336;
+}
+
+.remove_btn:hover,
+.close_btn:hover {
+    box-shadow: 2px 2px 0 #F44336;
+}
+
+.remove_btn {
+    color: #424242;
+    border: 2px solid #424242;
+}
+
+.remove_btn:hover {
+    box-shadow: 2px 2px 0 #424242;
+}
+
+.add_note {
+    width: 20rem;
+    height: 25rem;
+}
+
+.add_note__btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-clr);
+    background-color: #eeeeeec4;
+    border: 2px solid #EEEEEE;
+    backdrop-filter: blur(5px);
+}
+
+.add_note__btn:hover {
+    cursor: pointer;
+    background-color: #EEEEEE;
+}
+
+.add_icon {
+    font-size: 100px;
+}
+
+.add_text {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .note_bar {
+        justify-content: center;
+    }
+}
+
+/* Created by RGB-Status | Enjoy with Coding :) */

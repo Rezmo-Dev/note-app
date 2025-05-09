@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>RGB | Note Application</title>
+</head>
+<body>
+    <div class="work_space__wrapper">
+
+        <div class="input_wrapper">
+            <label for="title_input">Picture</label>
+            <div class="input_image_bar">
+                <div class="input_wrapper_image">
+                    <img src="media/svg/1.svg" alt="inputIMG" class="input_wrapper_image__img select_img" id="default_img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/2.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/3.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/4.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/5.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/6.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/7.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/9.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/10.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+                <div class="input_wrapper_image">
+                    <img src="media/svg/11.svg" alt="inputIMG" class="input_wrapper_image__img">
+                </div>
+            </div>
+            
+            <div class="input_box">
+                <label for="title_input">Title</label>
+                <input type="text" id="title_input" class="input title_input" placeholder="Enter The Title Note">
+            </div>
+
+            <div class="input_box">
+                <label for="detail_input">Details</label>
+                <textarea name="txtDetail" id="detail_input" placeholder="Enter the Note Details"></textarea>
+            </div>
+
+            <label>Theme Color</label>
+            <div class="color_bar"> 
+                <span class="color_option color_option1 select_color" id="default_theme" data-color1="#FFEBEE" data-color2="#ff8194"></span>
+                <span class="color_option color_option2" data-color1="#FFF8E1" data-color2="#ffe17d"></span>
+                <span class="color_option color_option3" data-color1="#E0F2F1" data-color2="#4DB6AC"></span>
+                <span class="color_option color_option4" data-color1="#E3F2FD" data-color2="#7fc1ed"></span>
+                <span class="color_option color_option5" data-color1="#EDE7F6" data-color2="#ac7df2"></span>
+                <span class="color_option color_option6" data-color1="#E0F7FA" data-color2="#7cd4f2"></span>
+                <span class="color_option color_option7" data-color1="#FBE9E7" data-color2="#FF8A65"></span>
+                <span class="color_option color_option8" data-color1="#FFFDE7" data-color2="#fff584"></span>
+                <span class="color_option color_option9" data-color1="#F1F8E9" data-color2="#c6fa8a"></span>
+            </div> 
+
+            <div class="input_btns">
+                <button class="btn close_btn">Cancel</button>
+                <button class="btn add-note" id="addToList">Add Note</button>
+            </div>
+        </div>
+
+        <h1 class="web_title">RGB Note</h1>
+
+        <div class="note_bar">
+
+            <!-- the Note Insert Here with JS -->
+
+            <div class="add_note">
+                <span class="add_note__spot"></span>
+                <button class="add_note__btn">
+                    <span class="add_icon">+</span>
+                    <span class="add_text">Add Note</span>
+                </button>
+            </div>
+        </div>
+
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Created by RGB-Status | Enjoy with Coding :) -->
